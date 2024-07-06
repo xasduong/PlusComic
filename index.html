@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13dc34c750.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpg" href="src/img/29_10_2021(1).jpg">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <title>Extra Comic</title>
+</head>
+<body>
+    <header>
+        <div id="comic-head">
+            <div class="col">
+                <img class="img_logo" style="width: 120px; height: 30px; object-fit: cover; border-radius: 3px" src="src/img/29_10_2021(1).jpg" alt="">
+                <span>ExtraComic</span>
+            </div>
+        </div>
+        <div class="list-nav">
+            <div class="col list-nav_btn">
+                <div id="setting" class="extra-btn">Thêm truyện</div>
+                <div class="genre-web">Thể loại</div>
+                <div  id="another_web" > Website</div>
+                <a id="export_api" href="https://docs.google.com/spreadsheets/d/17oLLv6ondphAGp4Iang6L0YjOt-PRIevHDZMFyK5rWo/edit?usp=sharing" target="_blank">Google Sheet</a>
+                <a href="#box-Api" id="array_api" class="">
+                    Mảng API
+                </a>
+                <a href="#box-rule" id="direct-web">
+                    Hướng dẫn
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <p class="extra-btn btn"><i class="fa-solid fa-plus" aria-hidden="true"></i></p>
+        <div class="box-genre">
+            <div class="col dgr">
+                <div class="box-genre_random">
+                    <p class="name"></p>
+                    <a href="" class="bg_random-img" target="_blank">
+                        <img src="src/img/29_10_2021(1).jpg" alt="">
+                    </a>
+                    <div class="bg_random-link dgr">
+                        <a href="" target="_blank">Đọc truyện</a>
+                        <a href="" target="_blank">Chương </a>
+                    </div>
+                </div>
+                <div class="box-genre_list">
+                    <div class="bg_list-title">
+                        Thể loại truyện đề xuất cho bạn!
+                    </div>
+                    <div class="bg_list-genre"><!--JS--></div>
+                    <div class="bg_list-comic">
+                        Có tổng cộng <section></section> truyện thuộc thể loại <section>+</section> 
+                    </div>
+                </div>
+                <img src="src/img/29_10_2021(1).jpg" alt="" class="box-genre_backgr">
+                <div class="box-genre_overlay"></div>
+            </div>
+        </div>
+        <div class="box-comic col"><!--JS--></div>
+        <div class="box-extra close dgr">
+            <form action="" class="box-extra_col">
+                <p class="box-extra_title">Thêm truyện tranh</p>
+                <div class="box-extra_name dgr ">
+                        <input type="text" id="nameComic" class="trf"  placeholder="Tên truyện tranh">
+                        <input type="text" id="mainCharacter" class="trf" placeholder="Tên nhân vật">
+                </div>
+                <div class="box-extra_href dgr">
+                        <input id="linkComic" type="text" placeholder="Đường dẫn truyện">
+                        <input id="linkImg" type="text" placeholder="Đường dẫn ảnh">
+                </div>
+                <div class="box-extra_genre ">
+                    <input type="text" class="trf" placeholder="Thể loại truyện">
+                </div>
+                <div class="box-extra_status dgr">
+                    <input type="number" min="0" placeholder="Số chương">
+                    <select name="genre" id="status-comic" class="be_status-select">
+                        <option value="On going" >On going</option>
+                        <option value="Dropped &#9785;" >Drop</option>
+                        <option value="Ra chậm quá &#9761">Slow</option>
+                    </select>
+                    <p class="be_status-link btn">Thêm đường dẫn</p>
+                </div>
+                <div class="box-extra_note">Nếu bạn muốn thêm đường dẫn truyện tới website khác hãy chọn vào nút "Thêm đường dẫn"</div>
+                <div class="box-extra_another ">
+                    <div class="be_another-wrap dgr close">
+                        <input type="text" class="trf" placeholder="Tên website"> 
+                        <input type="text" placeholder="Đường dẫn">
+                    </div>
+                </div>
+                <div class="box-extra_btn btn">Thêm truyện tranh</div>
+                <div class="be_col-handle dfl">
+                    <span class="bec-handle_del btn close">Xóa</span>
+                    <span class="bec-handle_clo btn">Đóng</span>
+                </div>
+            </form>
+            <div class="box-extra_col">
+                <img src="src/img/29_10_2021(1).jpg" alt="" class="be_col-img">
+                <div class="be_col-name name">ExtraComic</div>
+            </div>
+        </div>
+       
+        <div id="overlay" class="close"></div> 
+    </div>
+    <footer>
+        <div class="box-inf">
+            <div class="col dgr">
+                <div id="box-Api" class="box-inf_col">
+                    <div class="bx_col-title">Cập nhật danh sách truyện</div>
+                    <label for="nowArrComic">Mảng hiện tại
+                        <input id="nowArrComic" type="text" placeholder="Mảng hiện tại">
+                    </label>
+                    <label for="newArrComic">Cập nhật danh sách mới
+                        <input type="text" id="newArrComic" placeholder="Mảng mới">
+                    </label>
+                    <div class="bx_col-btn btn">Tải lên</div>
+                </div>
+                <div id="box-rule" class="box-inf_col rule">
+                    <p>Hướng dẫn sử dụng website</p>
+                    <ul>
+                        <li>1. Đây là website lưu giữ đường link truyện tranh</li>
+                        <li>2. Để thêm truyện tranh, bạn có thể nhấn vào nút "Thêm truyện"</li>
+                        <li>3. Hoặc là chọn vào hình <i class="fa-solid fa-plus"></i>(dấu cộng) ở góc dưới cùng bên phải </li>
+                        <li>4. Nhập vào các giá trị vào trong bảng, những điều bạn muốn</li>
+                        <li>5. Nhấn vào nút <p class="extra-btn">Thêm truyện</p>để đẩy truyện lên Local Storage</li>
+                        <li>6. Chúc các bạn đọc truyện vui vẻ!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="src/js/index.js"></script>
+</body>
+</html>
